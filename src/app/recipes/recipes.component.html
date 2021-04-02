@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-md-6">
+		<ul class="recipe_list">
+			<li *ngFor = "let recipe of recipes; let i = index">
+				<div class="d-flex">
+					<div>
+						<h2>{{recipe.name | uppercase}}</h2>
+						<p>{{ recipe.desc | custompipe }}</p>
+						<button class="btn-primary" (click)="onSelect(recipe)">View Recipe</button>
+					</div>
+					<div>
+						<img class="recipe_image" src="{{ recipe.image}}" alt="image">
+					</div>
+				</div>
+				
+		
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<div *ngIf="recipe; else displaytext">
+			<h2>{{recipe.name | uppercase}}</h2>
+			<img class="recipe_preview" src="{{ recipe.image}}" alt="image">
+			<p>{{ recipe.desc}}</p>
+		</div>
+		<ng-template #displaytext>
+
+			please select recipe for preview
+		</ng-template>
+	</div>
+</div>

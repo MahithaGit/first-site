@@ -1,0 +1,18 @@
+
+.logo{
+	max-width: 90px ;
+}
+nav .nav-link{
+	font-size:22px;
+	margin-right:50px;
+}
+.navbar-collapse{
+	justify-content: space-around;
+}
+.navbar-nav .nav-item.active .nav-link{
+color:red !important;
+}
+nav{
+	max-width:1200px;
+	margin: 0 auto;
+}

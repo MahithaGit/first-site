@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>shopping-list works!</h3>
+			<form #postData="ngForm" (ngSubmit)="sendData(postData.value)">
+				<div class="row">
+					<div class="form-group">
+					<label for="recipe">Recipe</label>
+					<input type ="control-label" id="recipe" class="form-control" name="recipe" ngModel>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<label type="number" for="amount">Amount</label>
+						<input type ="control-label" id="amount" class="form-control" name="amount" ngModel>
+					</div>
+					
+				</div>
+							<button class="btn" type="submit">Submit</button>
+
+			</form>
+
+			<button class="btn" (click)="getData()">Get data</button>
+		</div>
+	</div>
+	<div class="row">	</div>
+</div>

@@ -1,0 +1,10 @@
+.recipe_image{
+	max-width:200px;
+}
+.recipe_list{
+	cursor: pointer;
+}
+.recipe_list li{
+	list-style: none;
+	margin:10px 0;
+}
