@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
   }
-// onSubmit(formData:NgForm){
-// 	this.http.post("https://first-app-bb3d9-default-rtdb.firebaseio.com/formdata.json",formData).subscribe();
-// }
+onSubmit(formData:NgForm){
+	this.http.post("https://first-app-bb3d9-default-rtdb.firebaseio.com/formdata.json",formData).subscribe();
+}
 }
